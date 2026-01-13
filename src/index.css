@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth modern feel */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #020617;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Root container */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove ugly focus outlines */
+button, input {
+  outline: none;
+  border: none;
+}
+
+/* Smooth interactions */
+button {
+  transition: 0.3s ease;
+}
+
+/* Selection color */
+::selection {
+  background: #22d3ee;
+  color: black;
+}

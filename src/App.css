@@ -1,0 +1,154 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* App background */
+.app {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  color: #e5e7eb;
+}
+
+/* Glass main card */
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #22d3ee;
+}
+
+/* Page layout */
+.page-content {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+}
+
+/* Main content box */
+.big-container {
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  box-shadow: inset 0 0 20px rgba(255,255,255,0.05);
+}
+
+/* Titles */
+.big-title {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(to right, #22d3ee, #a855f7);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Inputs */
+.big-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  outline: none;
+  font-size: 15px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
+}
+
+.big-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Buttons */
+.big-btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #22d3ee, #a855f7);
+  color: black;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+}
+
+.big-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(34, 211, 238, 0.5);
+}
+
+/* Counter number */
+.counter-value {
+  font-size: 80px;
+  font-weight: 800;
+  color: #22d3ee;
+  text-shadow: 0 0 40px rgba(34, 211, 238, 0.6);
+}
+
+/* Theme modes */
+.app.light {
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  color: #020617;
+}
+
+.app.light .container {
+  background: white;
+}
+
+.app.light nav a {
+  color: #334155;
+}
+
+.app.light .big-container {
+  background: #f1f5f9;
+}
+
+.app.light .big-input {
+  background: white;
+  color: black;
+}
+
+.app.light .big-btn {
+  color: white;
+}

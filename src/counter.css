@@ -1,0 +1,49 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 30px;
+}
+
+/* Big glowing number */
+.count {
+  font-size: 90px;
+  font-weight: 800;
+  color: #22d3ee;
+  text-shadow: 0 0 40px rgba(34, 211, 238, 0.8);
+}
+
+/* Button row */
+.btn-group {
+  display: flex;
+  gap: 20px;
+}
+
+/* Buttons */
+.btn-group button {
+  padding: 14px 30px;
+  border-radius: 40px;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0ea5e9, #a855f7);
+  color: black;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+  transition: 0.3s ease;
+}
+
+/* Hover */
+.btn-group button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(14, 165, 233, 0.9);
+}
+
+/* Reset button special look */
+.btn-group button:nth-child(2) {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: white;
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.7);
+}
